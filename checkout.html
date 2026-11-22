@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,72 +10,146 @@
 
 <title>Checkout | Srikala Organics</title>
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
   <nav class="nav wrap" aria-label="Main">
-    <a class="brand" href="index.html" aria-label="Srikala Organics home"><span aria-hidden="true">🌿</span><div><strong>Srikala</strong><small>ORGANICS</small></div></a>
+    <a class="brand" href="index.html" aria-label="Srikala Organics home">
+      <span aria-hidden="true">🌿</span>
+      <div><strong>Srikala</strong><small>ORGANICS</small></div>
+    </a>
+
     <div class="navlinks">
-      <a href="index.html#shop">Shop</a><a href="index.html#why">Why Us</a><a href="index.html#about">About</a>
+      <a href="index.html#shop">Shop</a>
+      <a href="index.html#why">Why Us</a>
+      <a href="index.html#about">About</a>
       <a href="auth.html" data-account-link>Login</a>
       <a class="cart-pill" href="cart.html" aria-label="Cart">🛒 Cart <b class="cart-count">0</b></a>
     </div>
+
     <button class="menu-btn" id="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">☰</button>
   </nav>
+
   <div class="mobile-nav" id="mobile-nav">
-    <a href="index.html#shop">Shop</a><a href="index.html#why">Why Us</a><a href="index.html#about">About</a><a href="auth.html" data-account-link>Login</a>
+    <a href="index.html#shop">Shop</a>
+    <a href="index.html#why">Why Us</a>
+    <a href="index.html#about">About</a>
+    <a href="auth.html" data-account-link>Login</a>
   </div>
 </header>
 
 <main class="page wrap" id="main">
-  <div class="page-title"><span class="eyebrow">CHECKOUT</span><h1>Complete your order</h1></div>
+  <div class="page-title">
+    <span class="eyebrow">CHECKOUT</span>
+    <h1>Complete your order</h1>
+  </div>
+
   <div id="message" aria-live="polite"></div>
+
   <div class="checkout-grid">
     <form class="panel" id="checkout-form">
       <div class="form-grid">
-        <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required maxlength="100"></div>
-        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel-national" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" title="10-digit Indian mobile number" required></div>
+
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" autocomplete="name" required maxlength="100">
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel-national" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" title="10-digit Indian mobile number" required>
+        </div>
+
         <div class="field full">
-  <label for="email">Email address</label>
-  <input
-    id="email"
-    name="email"
-    type="email"
-    autocomplete="email"
-    maxlength="254"
-    placeholder="Enter your email address"
-    required
-  >
-</div>
-        <div class="field full"><label for="address">Address</label><textarea id="address" name="address" autocomplete="street-address" required maxlength="300"></textarea></div>
-        <div class="field"><label for="city">City</label><input id="city" name="city" autocomplete="address-level2" required maxlength="80"></div>
-        <div class="field"><label for="pin">PIN code</label><input id="pin" name="pin" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" title="6-digit PIN code" required></div>
+          <label for="email">Email address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            maxlength="254"
+            placeholder="Enter your email address"
+            required
+          >
+        </div>
+
+        <div class="field full">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" autocomplete="street-address" required maxlength="300"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="city">City</label>
+          <input id="city" name="city" autocomplete="address-level2" required maxlength="80">
+        </div>
+
+        <div class="field">
+          <label for="pin">PIN code</label>
+          <input id="pin" name="pin" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" title="6-digit PIN code" required>
+        </div>
+
       </div>
+
       <fieldset class="pay-box">
         <legend>Payment method</legend>
+
         <label class="pay-option" for="pay-cod">
           <input type="radio" name="payment" id="pay-cod" value="cod" checked required>
           <span class="pay-icon" aria-hidden="true">💵</span>
-          <span><strong>Cash on Delivery</strong><small>Pay in cash (or UPI to the delivery person) when your order arrives.</small></span>
+          <span>
+            <strong>Cash on Delivery</strong>
+            <small>Pay in cash (or UPI to the delivery person) when your order arrives.</small>
+          </span>
         </label>
+
         <p class="pay-note">Online payment (UPI / cards / net banking) is not enabled yet.</p>
       </fieldset>
+
       <button class="btn primary block" id="place-btn" type="submit">Place order →</button>
     </form>
-    <aside class="panel summary"><h2>Order summary</h2><div id="summary"></div><p class="summary-pay">Payment: <strong>Cash on Delivery</strong></p></aside>
+
+    <aside class="panel summary">
+      <h2>Order summary</h2>
+      <div id="summary"></div>
+      <p class="summary-pay">Payment: <strong>Cash on Delivery</strong></p>
+    </aside>
   </div>
 </main>
+
 <footer>
   <div class="wrap footer-grid">
-    <div><a class="brand footer-brand" href="index.html"><span aria-hidden="true">🌿</span><div><strong>Srikala</strong><small>ORGANICS</small></div></a><p>Trust the product. Feel the difference.</p></div>
-    <div><h4>Shop</h4><a href="index.html#shop">Products</a><a href="cart.html">Cart</a><a href="checkout.html">Checkout</a><a href="auth.html" data-account-link>Login</a></div>
-    <div><h4>Support</h4><a href="mailto:support@srikalaorganics.com">support@srikalaorganics.com</a></div>
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span aria-hidden="true">🌿</span>
+        <div><strong>Srikala</strong><small>ORGANICS</small></div>
+      </a>
+      <p>Trust the product. Feel the difference.</p>
+    </div>
+
+    <div>
+      <h4>Shop</h4>
+      <a href="index.html#shop">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="auth.html" data-account-link>Login</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <a href="mailto:support@srikalaorganics.com">support@srikalaorganics.com</a>
+    </div>
   </div>
+
   <div class="footer-bottom">© 2026 Srikala Organics. All rights reserved.</div>
 </footer>
+
 <script src="config.js"></script>
 <script src="app.js"></script>
 <script src="checkout.js"></script>
