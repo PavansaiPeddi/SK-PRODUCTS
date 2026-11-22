@@ -46,9 +46,17 @@ async function placeOrder(e) {
   if (payment !== "cod") { msg.innerHTML = '<div class="error" role="alert">Please choose a payment method.</div>'; return; }
   const val = id => document.getElementById(id).value.trim();
   const body = {
-    p_customer_name: val("name"), p_phone: val("phone"), p_address: val("address"), p_city: val("city"), p_pin: val("pin"),
-    p_items: c.map(p => ({ product_id: String(p.id), quantity: Number(p.quantity) }))
-  };
+  p_customer_name: val("name"),
+  p_email: val("email"),
+  p_phone: val("phone"),
+  p_address: val("address"),
+  p_city: val("city"),
+  p_pin: val("pin"),
+  p_items: c.map(p => ({
+    product_id: String(p.id),
+    quantity: Number(p.quantity)
+  }))
+};
   placing = true; btn.disabled = true; btn.textContent = "Placing order…";
   msg.innerHTML = '<div class="success" role="status">Placing your order…</div>';
   try {
