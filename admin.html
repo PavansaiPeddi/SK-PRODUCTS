@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://cxjkjcttlezqjqrvkecv.supabase.co; base-uri 'self'; form-action 'self'; object-src 'none'">
+<meta name="description" content="Srikala Organics order management.">
+<meta name="theme-color" content="#173f2b">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin | Srikala Organics</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav wrap" aria-label="Main"><a class="brand" href="index.html" aria-label="Srikala Organics home"><span aria-hidden="true">🌿</span><div><strong>Srikala</strong><small>ADMIN</small></div></a><a class="text-btn" href="index.html">← Back to store</a></nav></header>
+
+<main class="page wrap" id="main">
+  <div id="login" class="panel login-panel">
+    <span class="eyebrow">PRIVATE AREA</span><h1>Admin login</h1>
+    <form id="login-form">
+      <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="username" required></div>
+      <div class="field gap"><label for="password">Password</label><input id="password" type="password" autocomplete="current-password" required></div>
+      <button class="btn primary block" id="login-btn" type="submit">Login</button>
+      <p id="login-msg" class="login-msg" role="alert"></p>
+    </form>
+  </div>
+  <div id="dashboard" hidden>
+    <div class="section-head"><div><span class="eyebrow">ADMIN</span><h1>Orders</h1></div><div class="toolbar"><button class="small-btn" id="refresh" type="button">↻ Refresh</button><button class="small-btn" id="logout" type="button">Logout</button></div></div>
+    <div id="orders"></div>
+  </div>
+</main>
+<footer><div class="footer-bottom">© 2026 Srikala Organics</div></footer>
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
