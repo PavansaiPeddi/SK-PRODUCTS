@@ -37,6 +37,18 @@
       <div class="form-grid">
         <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required maxlength="100"></div>
         <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel-national" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" title="10-digit Indian mobile number" required></div>
+        <div class="field full">
+  <label for="email">Email address</label>
+  <input
+    id="email"
+    name="email"
+    type="email"
+    autocomplete="email"
+    maxlength="254"
+    placeholder="Enter your email address"
+    required
+  >
+</div>
         <div class="field full"><label for="address">Address</label><textarea id="address" name="address" autocomplete="street-address" required maxlength="300"></textarea></div>
         <div class="field"><label for="city">City</label><input id="city" name="city" autocomplete="address-level2" required maxlength="80"></div>
         <div class="field"><label for="pin">PIN code</label><input id="pin" name="pin" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" title="6-digit PIN code" required></div>
