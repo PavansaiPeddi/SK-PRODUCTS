@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" role="img" aria-label="Turmeric powder pouch">
+<ellipse cx="100" cy="238" rx="60" ry="8" fill="#173f2b" opacity=".12"/>
+<path d="M48 40h104l8 186c0 6-4 10-10 10H50c-6 0-10-4-10-10z" fill="#e8a317"/>
+<path d="M48 40h104l2 30H46z" fill="#c98512"/>
+<path d="M50 46h100M50 54h100M50 62h100" stroke="#a96d0b" stroke-width="2" opacity=".6"/>
+<rect x="60" y="100" width="80" height="84" rx="10" fill="#fff8e6"/>
+<text x="100" y="134" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="13" fill="#173f2b">TURMERIC</text>
+<text x="100" y="151" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" letter-spacing="1.5" fill="#68746c">HALDI POWDER</text>
+<path d="M82 164c10-12 26-12 36 0-10 8-26 8-36 0z" fill="#e8a317"/>
+<path d="M58 82c-4 40-4 90-2 130" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".25" fill="none"/>
+</svg>

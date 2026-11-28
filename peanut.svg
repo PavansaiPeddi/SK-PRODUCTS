@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" role="img" aria-label="Peanut butter jar">
+<ellipse cx="100" cy="238" rx="62" ry="8" fill="#173f2b" opacity=".12"/>
+<rect x="48" y="44" width="104" height="26" rx="7" fill="#c0392b"/>
+<rect x="54" y="40" width="92" height="10" rx="5" fill="#d85a4a"/>
+<path d="M54 70h92c8 8 12 20 12 38v100c0 16-10 26-26 26H68c-16 0-26-10-26-26V108c0-18 4-30 12-38z" fill="#c68a4d"/>
+<path d="M54 70h92c8 8 12 20 12 38v10H42v-10c0-18 4-30 12-38z" fill="#d9a468"/>
+<rect x="58" y="128" width="84" height="64" rx="8" fill="#fff8e6"/>
+<text x="100" y="152" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="14" fill="#173f2b">PEANUT</text>
+<text x="100" y="168" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="14" fill="#173f2b">BUTTER</text>
+<ellipse cx="100" cy="182" rx="10" ry="5" fill="#c68a4d"/>
+<path d="M62 84c-6 14-8 28-8 44" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".3" fill="none"/>
+</svg>
